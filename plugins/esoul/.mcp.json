@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "esoul": {
+      "type": "http",
+      "url": "https://externalsoul.com/mcp/me",
+      "oauth": {
+        "callbackUrl": "http://localhost:43821/callback",
+        "callbackPort": 43821
+      }
+    }
+  }
+}

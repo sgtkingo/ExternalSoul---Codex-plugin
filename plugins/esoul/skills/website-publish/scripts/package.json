@@ -1,0 +1,9 @@
+{
+  "name": "esoul-website-check",
+  "private": true,
+  "type": "module",
+  "description": "The website-publish checks: every screen, both themes, contrast, weight, reduced motion.",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "esoul-website-films",
+  "private": true,
+  "type": "module",
+  "description": "The website-films recorder: real films of real pages, for a website.",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

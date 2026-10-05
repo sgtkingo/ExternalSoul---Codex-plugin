@@ -1,0 +1,54 @@
+{
+  "tools": [
+    {
+      "name": "recall",
+      "description": "Remember something from the past \u2014 ANY time the user refers to earlier work, a thing they made, said, saved, posted or decided (\"remember that list of leads we made?\", \"what's my budget again?\"). Searches, in one call: every past work session an agent did (episodes), facts the user asked to keep (newest version first), and all workspace content dated by when it happened. Pass the user's own words as query; pass any time they mention as `when`. Every artifact comes back with its status today.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "What the user is trying to remember, in their words."
+          },
+          "when": {
+            "type": "string",
+            "description": "Any time phrase the user used, verbatim."
+          },
+          "since": {
+            "type": "string",
+            "description": "ISO date lower bound (optional; overrides when)."
+          },
+          "until": {
+            "type": "string",
+            "description": "ISO date upper bound (optional)."
+          },
+          "limit": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    {
+      "name": "remember",
+      "description": "Keep a fact for the long term \u2014 a preference, a decision, a number, who someone is, where something lives, the goal of the current task. Use it when the user says \"remember\u2026\", states something that will matter later, or corrects an earlier fact (the old version is kept but marked superseded, so recall always returns the current one first). One fact per call, in a full sentence that stands on its own. You do NOT need this for work you do in apps \u2014 that is recorded automatically from the timeline.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string",
+            "description": "Optional subject to file it under (e.g. an existing one recall returned)."
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    }
+  ]
+}

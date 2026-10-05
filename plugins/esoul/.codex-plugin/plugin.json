@@ -1,0 +1,37 @@
+{
+  "name": "esoul",
+  "version": "1.12.1",
+  "description": "Connect Codex to your ExternalSoul account: persistent memory, notebooks, spreadsheets, apps, agents, websites, CAD and 20 reusable workflows.",
+  "author": {
+    "name": "ExternalSoul",
+    "email": "hey@vyomkeshj.com",
+    "url": "https://externalsoul.com"
+  },
+  "homepage": "https://externalsoul.com",
+  "repository": "https://github.com/AdvancedMonkeys/esoul-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "3d-printing",
+    "agents",
+    "apps",
+    "automation",
+    "browser-automation",
+    "cad",
+    "event-sourcing",
+    "externalsoul",
+    "forge",
+    "manim",
+    "memory",
+    "sdk",
+    "video",
+    "website",
+    "workspace"
+  ],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ExternalSoul",
+    "shortDescription": "Your ExternalSoul memory, notebooks and apps",
+    "defaultPrompt": "Use ExternalSoul to find my workspaces and notebook."
+  }
+}
